@@ -3,4 +3,4 @@ async function getLinks(link){
 }
 for (let i of document.querySelectorAll("l")){
     await getLinks(i.innerHTML).then(async res => i.outerHTML = res);
-}////
+}////.
