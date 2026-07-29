@@ -16,3 +16,4 @@ function change(obj,index = 0) {
     return array
 }
 change({name:"Artem"},0);
+//
