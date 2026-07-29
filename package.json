@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "untitled30",
   "version": "1.0.0",
   "description": "",
@@ -14,10 +13,8 @@
     "url": "git+https://github.com/Artem-Lazariev/s.git"
   },
   "keywords": [],
-
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Artem-Lazariev/s/issues"
   },
@@ -28,15 +25,3 @@
     "posthtml-include": "^2.0.1"
   }
 }
-=======
-  "name": "my-node-project",
-  "version": "1.0.0",
-  "description": "Мій перший проєкт на Node.js для виведення даних",
-  "main": "main.js",
-  "scripts": {
-    "start": "node main.js"
-  },
-  "author": "Твоє Ім'я",
-  "license": "ISC"
-}
->>>>>>> 570fa66a4f1e9bb3892693411be3306ced39a357
