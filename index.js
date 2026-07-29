@@ -1,9 +1,10 @@
 
 //base.innerHTML = ''
-function change(obj,index = 0) {
-    let base = document.querySelectorAll('all')
+
+function change(obj,index = 0,inAll) {
+    let base = document.querySelectorAll('all')[inAll];
     let array = []
-    for (let i of base) {
+    let i = base
 
         i = i.querySelectorAll('var')[index]
         if (!i || !(obj[i.innerHTML.trim()]) ) {
@@ -12,7 +13,7 @@ function change(obj,index = 0) {
             i.innerHTML = obj[i.innerHTML.trim()]
             array.push(1)
         }
-    }
+    
     return array
 }
-change({name:"Artem"},0);
+change({name:"Artem"},0,0);
