@@ -1,17 +1,8 @@
-
-function change(obj,index = 0,inAll = 0) {
-    let base = document.querySelectorAll('all')[inAll];
-    let array = []
-    let i = base
-
-    i = i.querySelectorAll('var')[index]
-    if (!i || !(obj[i.innerHTML.trim()]) ) {
-        array.push(-1)
-    }else {
-        i.innerHTML = obj[i.innerHTML.trim()]
-        array.push(1)
+function change(object,index = 0) {
+    let all = document.querySelectorAll("all")
+    let vars = all[index].querySelectorAll("var")
+    for (let varV of vars){
+        varV.innerHTML = eval(`object.${varV.innerHTML}`)
     }
-
-    return array
 }
-change({name:"Artem"},0,0);
+change({name:"artem"},0);
